@@ -1,14 +1,54 @@
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/index.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>UST Information Systems Society</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/isslogo.png" />
+		
+		<script>
+			(function(){
+		function id(v){ return document.getElementById(v); }
+		function loadbar() {
+		var ovrl = id("overlay"),
+		prog = id("progress"),
+		stat = id("progstat"),
+		img = document.images,
+		c = 0,
+		tot = img.length;
+		if(tot == 0) return doneLoading();
+		function imgLoaded(){
+		c += 1;
+		var perc = ((100/tot*c) << 0) +"%";
+		prog.style.width = perc;
+		stat.innerHTML = "Loading "+ perc;
+		if(c===tot) return doneLoading();
+		}
+		function doneLoading(){
+		ovrl.style.opacity = 0;
+		setTimeout(function(){
+		ovrl.style.display = "none";
+		}, 1200);
+		}
+		for(var i=0; i<tot; i++) {
+		var tImg     = new Image();
+		tImg.onload  = imgLoaded;
+		tImg.onerror = imgLoaded;
+		tImg.src     = img[i].src;
+		}
+		}
+		document.addEventListener('DOMContentLoaded', loadbar, false);
+		}());</script>
+		
 	</head>
 	<body>
 		<nav id="main-nav">
-
 		</nav>
-
+		<div id="overlay">
+			<div id="progstat"></div>
+			<div id="progress"></div>
+		</div>
 		<div id="landing-div" class="full-width full-height">
 			<center>
 			<div id="logos">
@@ -20,202 +60,39 @@
 			<center><h1 class="heading">INFORMATION SYSTEMS SOCIETY</h1></center>
 			<center><img class="sm-icon" src="images/scrolldown.gif"></center>
 		</div>
-
-		<div id="about-div" class="full-width full-height padded">
+		<div id="about-div" class="full-width padded">
 			<img id="isslogo" class="lg-logo" src="images/isslogo.png">
 			<div class="description-box">
 				<h1>Information Systems Society</h1>
-				<p>The Information Systems Society, also referred to as ISS or UST-ISS, 
+				<p>The Information Systems Society, also referred to as ISS or UST-ISS,
 				is a not-for-profit organization for the Information Systems community of the University of Santo Tomas</p>
 				<b>Vision</b>
-				<p>Guided by the core values of the University and the Information Systems Department, 
-				the Information Systems Society commits itself in providing an avenue for growth and social responsiveness 
-				for the individuals to harness the abilities and potentials needed for the overall development of each member; to tap the 
-				technical and managerial potentials of members to help them become proactive and esteemed members of the society, geared to 
-				surpass the challenges of time; to cultivate a custom of comradeship through active 
+				<p>Guided by the core values of the University and the Information Systems Department,
+					the Information Systems Society commits itself in providing an avenue for growth and social responsiveness
+					for the individuals to harness the abilities and potentials needed for the overall development of each member; to tap the
+					technical and managerial potentials of members to help them become proactive and esteemed members of the society, geared to
+					surpass the challenges of time; to cultivate a custom of comradeship through active
 				involvement in the organization’s events; and to promote a strong sense of ownership for the same vision.</p>
 				<b>Mission</b>
-				<p>The Information Systems Society of the University of Santo Tomas aims to be the country’s leading student 
-				organization of information systems professionals in pursuit of academic and non-academic par excellence to 
-				form and transform society through proactive projects utilizing information technology in its right purpose. 
-				To foster and enhance the knowledge and skills of all its members in order to develop them to become competent, 
-				compassionate, and committed IS professionals fit to excel in their respective field; and to provide means to bridge 
+				<p>The Information Systems Society of the University of Santo Tomas aims to be the country’s leading student
+					organization of information systems professionals in pursuit of academic and non-academic par excellence to
+					form and transform society through proactive projects utilizing information technology in its right purpose.
+					To foster and enhance the knowledge and skills of all its members in order to develop them to become competent,
+					compassionate, and committed IS professionals fit to excel in their respective field; and to provide means to bridge
 				the gap between its members and the community outside them in order to fulfill social responsibilities.</p>
-
 			</div>
 		</div>
-
-		<div id="committees-div" class="full-width padded auto-height">
-		<center><h1 class="heading">Committees</h1></center>
-		<br><br><br>
-			<div class="card col-4">
-				<center>
-				<img src="images/creatives.png">
-				<h3>Creatives Committee</h3>
-				</center>
-				<p>Headed by the Vice-President for Creatives, shall be in 
-							charge of documenting all the activities of the UST-ISS. 
-							This committee shall, also, be in charge of all the advertising 
-							prints to be used for various events. They will be responsible 
-							in producing event posters and videos required by the officer-in-charge 
-							and they accept and deliberate on the articles to be featured in 
-							the website, if applicable.
-				</p>
-
-			</div>
-			<div class="card col-4">
-				<center>
-				<img src="images/finance.png">
-				<h3>Finance Committee</h3>
-				</center>
-				<p>Headed by the Vice-President for Finance shall be in charge in planning and undertaking fund raising activities of the UST-ISS.
-				</p>
-
-			</div>
-			<div class="card col-4">
-				<center>
-				<img src="images/audit.png">
-				<h3>Audit and Logistics Committee</h3>
-				</center>
-				<p>The Audit & Logistics Committee, headed by the Vice-President for Audit shall be in charge of  auditing  all resources of the organization; 
-					preparing the term or semester   Audited Finance  Statements and submit  same to the Executive Board a week before the final examinations; and 
-					in keeping all yearly audited  financial transactions of the UST-ISS for a period of three (3) years. Moreover, the committee should monitor and
-					provide materials and equipment for use of the organization and must apply for the official locker of the organization.
-				</p>
-
-			</div>
-
-			<div class="card col-4">
-				<center>
-				<img src="images/community.png">
-				<h3>Community Development Committee</h3>
-				</center>
-				<p>Headed by the Vice-President for Community Development shall be responsible for the planning and preparation of 
-							community development activities of the UST-ISS such as, but not limited to the following: outreach programs, helping 
-							calamity victims and engaging in medical missions. They shall be in charge of communicating with the different communities, 
-							orphanages and other institutions which the UST-ISS may want to help.
-				</p>
-
-			</div>
-
-			<div class="card col-4">
-				<center>
-				<img src="images/academics.png">
-				<h3>Academics Committee</h3>
-				</center>
-				<p>headed by the Vice-President for Academics shall be responsible in conducting co-curricular activities, education and training 
-						seminars for the IS students of the University of Santo Tomas, including the preparation of study guides and curricular activites.
-				</p>
-
-			</div>
-
-			<div class="card col-4">
-				<center>
-				<img src="images/events.png">
-				<h3>Events Committee</h3>
-				</center>
-				<p>Headed by the Vice-for Events shall be responsible for the proposal and implementation of
-							socio-cultural and other related activities of the UST-ISS such as pageants and accustomed social gatherings.
-				</p>
-
-			</div>
-			
-
-			<div class="card col-4" style="max-height:300px; overflow:hidden; opacity:0;">
-				<center>
-				<img src="images/publicity.png">
-				<h3>Publicity and Recruitment Committee</h3>
-				</center>
-				<p>headed by the Vice-President for Publicity and Recruitment shall be responsible for 
-						disseminating information regarding the activities and other related happenings of the UST-ISS. 
-				</p>
-
-			</div>
-
-			<div class="card col-4" style="margin-top:-50px;">
-				<center>
-				<img src="images/secretariat.png">
-				<h3>Secretariat Committee</h3>
-				</center>
-				<p>The Executive Secretary at Assistant Secretary of the ISS.</p>
-
-			</div>
-
-			<div class="card col-4" style="margin-top:-50px;">
-				<center>
-				<img src="images/external.png">
-				<h3>External Relations Committee</h3>
-				</center>
-				<p>Headed by the Vice-President for External Relations shall be in-charge in maintaining 
-							relationships with organizations of other Universities and of sponsorships for all the 
-							activities of the organization.
-				</p>
-
-			</div>
-
-			<div class="card col-4" style="margin-top:-50px;">
-				<center>
-				<img src="images/sports.png">
-				<h3>Sports Committee</h3>
-				</center>
-				<p>Headed by the Sports Coordinators to be appointed by the Executive Board, 
-							shall be responsible for the proposal and implementation of sports activities
-							within and outside the organization.
-				</p>
-
-			</div>
-
-			<div class="card col-4">
-				<center>
-				<img src="images/grievance.png">
-				<h3>Grievance Committee</h3>
-				</center>
-				<p>Headed by the President and the Grievance Chairman to be appointed by the Executive Board,  
-						shall be in charge of handling all the grievances and complaints of the IS students. They will also
-						take charge in monitoring violation of student rights and shall take stand as the legal counsel of the IS students.
-						The Grievance Committee Chairman seats as a voting member of the Executive Board for decision making purposes.
-				</p>
-
-			</div>
-			<div class="card col-4">
-				<center>
-				<img src="images/publicity.png">
-				<h3>Publicity and Recruitment Committee</h3>
-				</center>
-				<p>headed by the Vice-President for Publicity and Recruitment shall be responsible for 
-						disseminating information regarding the activities and other related happenings of the UST-ISS. 
-				</p>
-
-			</div>
-
-			<div class="card col-4">
-				<center>
-				<img src="images/webtech.png">
-				<h3>Webtech Team</h3>
-				</center>
-				<p>Headed by the Director for Webtech, the webtech team is responsible for developing technology platforms which could help the organization's operations.
-				</p>
-
-			</div>
-
-			
+		<div id="eb-banner" class="full-width">
 		</div>
-
-		<div id="sponsors-div" class="full-height full-width padded">
-
-		</div>
-
+		
 		<div id="portal-promo" class="half-height full-width padded">
 			<center><h1 class="heading">Connect with us!</h1></center>
 			<center><a href="" class="hollow">Access the ISS Portal.</a></center>
 			<br>	<br>	<br>
 			<center><a href="https://www.facebook.com/profile.php?id=193865153971142&fref=ts"><img src="images/64-facebook.png"></a>
-
-					<a href="https://twitter.com/USTISS"><img src="images/64-twitter.png"></a>
-
-					<a href="https://www.instagram.com/ustiss/"><img src="images/64-instagram.png"></a>
+			<a href="https://twitter.com/USTISS"><img src="images/64-twitter.png"></a>
+			<a href="https://www.instagram.com/ustiss/"><img src="images/64-instagram.png"></a>
 			</center>
 		</div>
 	</body>
-
 </html>

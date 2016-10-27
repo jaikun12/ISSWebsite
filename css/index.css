@@ -43,6 +43,13 @@ html{
 	width:300px;
 }
 
+#eb-banner{
+	height:400px;
+	background:url(../images/ebbg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+}
+
 #logos{
 	margin-top:100px;
 	
@@ -52,13 +59,22 @@ html{
 	margin-left:20px;
 }
 
-.lg-logo{
+.lg-logo{/*
 	position:relative;
 	left:100;
-	top:100;
-	height:450px;
-	width:450px;
+	top:100;*/
+	--varWidth : 50px;
+	float:left;
+	height:60vh;
+	min-width:100px;
+	width:30vw;
+	
+	
 }
+
+
+
+
 
 
 #iics{
@@ -79,7 +95,12 @@ html{
 	margin-left:5vw;
 }
 
+#about-div{
+	height:800px;
+}
+
 .description-box{
+	min-width:250px;
 	max-width:50vw;
 	float:right;
 
@@ -166,7 +187,138 @@ html{
 	color:#FC9900;
 }
 
+.title-row{
+	margin-top:70px;
+	margin-bottom:70px;
+}
 
+.title-row p{
+	max-width:80%;
+}
+
+.main-title{
+	margin-top:50px;
+	margin-bottom:100px;
+}
+
+#acads-title{
+	background:url(../images/academics-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+}
+
+#audit-title{
+	background:url(../images/audit-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+}
+
+#creatives-title{
+	background:url(../images/creatives-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+	color:white;
+}
+
+#comdev-title{
+	background:url(../images/comdev-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+	color:white;
+}
+
+#events-title{
+	background:url(../images/events-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+	color:white;
+}
+
+#external-title{
+	background:url(../images/external-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+	color:white;
+}
+
+#finance-title{
+	background:url(../images/finance-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+	
+}
+
+#publicity-title{
+	background:url(../images/publicity-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+	color:black;
+}
+
+#sports-title{
+	background:url(../images/sports-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+	color:white;
+}
+
+#webtech-title{
+	background:url(../images/webtech-bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	height:150px;
+	color:white;
+}
+
+.bg{
+	color:white;
+}
+
+.md-img{
+	height:200px;
+	width:200px;
+}
+
+.id-card{
+	
+}
+
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.9);
+  transition: 1s 0.4s;
+}
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;                /* will be increased by JS */
+  top:50%;
+}
+#progstat{
+  font-size:0.7em;
+  letter-spacing: 3px;
+  position:absolute;
+  top:50%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:#fff;
+}
 
 
 
@@ -194,3 +346,313 @@ html{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+@media only screen 
+and (max-width : 400px) {
+
+#about-div{
+	height:1800px;
+}
+
+.lg-logo{/*
+	position:relative;
+	left:100;
+	top:100;*/
+	float:left;
+	height:250px;
+	width:250px;
+}
+
+.card{
+
+	float:left;
+	/*max-width:300px;*/
+	text-align:justify;
+	margin-top:50px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	padding-top:20px;
+  	padding-bottom:20px;
+  	border:solid white 1px;
+  	min-width:300px;
+	padding:none;
+	margin-bottom:100px;
+}
+
+.card p{
+	max-width:250px;
+	margin:0 auto;
+	font-size:2.3vh;
+	font-family:'Roboto';
+	line-height:2;
+	
+}
+
+#portal-promo .hollow{
+	border:solid white 5px;
+	padding-right:20px;
+	padding-left:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-decoration:none;
+	font-family:'Quicksand';
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	color:black;
+  	font-size:2vh;
+  }
+
+  .landing-logo{
+	height:250px;
+	width:250px;
+	margin-bottom:50px;
+	margin-left:20px;
+
+}
+	
+  #logos{
+  	margin:0 auto;
+  }
+
+  .full-height{
+  	height:800px;
+  	max-height:none;
+  }
+	
+  .inner{
+  	margin-left:0px;
+  }
+
+  .sm-icon{
+  	display:none;
+  }
+  #landing-div{
+	background:white;
+	min-height:170vh;
+	overflow-x:hidden;
+	margin-bottom:solid #FC9900 1px;
+
+}
+
+}
+
+@media only screen 
+and (min-width: 401px)
+and (max-width : 600px) {
+
+#about-div{
+	height:1800px;
+}
+.lg-logo{/*
+	position:relative;
+	left:100;
+	top:100;*/
+	float:left;
+	height:400px;
+	width:400px;
+}
+
+.description-box{
+	min-width:250px;
+	max-width:500px;
+	float:right;
+
+}
+
+.card{
+
+	float:left;
+	/*max-width:300px;*/
+	text-align:justify;
+	margin-top:50px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	padding-top:20px;
+  	padding-bottom:20px;
+  	border:solid white 1px;
+  	min-width:500px;
+	padding:none;
+	margin-bottom:100px;
+	margin-left:-20px;
+}
+
+.card p{
+	max-width:400px;
+	margin:0 auto;
+	font-size:2.3vh;
+	font-family:'Roboto';
+	line-height:2;
+	
+}
+
+#portal-promo .hollow{
+	border:solid white 5px;
+	padding-right:20px;
+	padding-left:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-decoration:none;
+	font-family:'Quicksand';
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	color:black;
+  	font-size:2vh;
+  }
+
+  .landing-logo{
+	height:250px;
+	width:250px;
+	margin-bottom:50px;
+	margin-left:20px;
+
+}
+	
+  #logos{
+  	margin:0 auto;
+  }
+
+  .full-height{
+  	height:800px;
+  	max-height:none;
+  }
+	
+  .inner{
+  	margin-left:0px;
+  }
+
+  .sm-icon{
+  	display:none;
+  }
+  #landing-div{
+	background:white;
+	min-height:170vh;
+	overflow-x:hidden;
+	margin-bottom:solid #FC9900 1px;
+
+}
+
+}
+
+@media only screen 
+and (min-width: 601px)
+and (max-width : 1000px) {
+
+	#about-div{
+	height:1300px;
+}
+
+.lg-logo{/*
+	position:relative;
+	left:100;
+	top:100;*/
+	float:left;
+	margin-left:300px;
+	height:400px;
+	width:400px;
+}
+
+#isslogo{
+	margin-left:25vw;
+}
+
+.description-box{
+	min-width:250px;
+	max-width:800px;
+	float:right;
+
+}
+
+.card{
+
+	float:left;
+	/*max-width:300px;*/
+	text-align:justify;
+	margin-top:50px;
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	padding-top:20px;
+  	padding-bottom:20px;
+  	border:solid white 1px;
+  	min-width:370px;
+	padding:none;
+	margin-bottom:100px;
+	margin-left:30px;
+	
+}
+
+.card p{
+	max-width:300px;
+	margin:0 auto;
+	font-size:2.3vh;
+	font-family:'Roboto';
+	line-height:2;
+	
+}
+
+#portal-promo .hollow{
+	border:solid white 5px;
+	padding-right:20px;
+	padding-left:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	text-decoration:none;
+	font-family:'Quicksand';
+	-o-transition:.5s;
+  	-ms-transition:.5s;
+  	-moz-transition:.5s;
+  	-webkit-transition:.5s;
+  	color:black;
+  	font-size:2vh;
+  }
+
+  .landing-logo{
+	height:250px;
+	width:250px;
+	margin-bottom:50px;
+	margin-left:20px;
+
+}
+	
+  #logos{
+  	margin:0 auto;
+  }
+
+  .full-height{
+  	height:800px;
+  	max-height:none;
+  }
+	
+  .inner{
+  	margin-left:0px;
+  }
+
+  .sm-icon{
+  }
+  #landing-div{
+	background:white;
+	overflow-x:hidden;
+	margin-bottom:solid #FC9900 1px;
+
+}
+
+}
+
+@media only screen 
+and (min-width: 1000px)
+and (max-width: 1200px) {
+	#about-div{
+	height:1300px;
+}
+
+
+	}
